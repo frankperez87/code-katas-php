@@ -28,6 +28,11 @@ class ChopSpec extends ObjectBehavior
              ->during('chop', [1, [3]]);
     }
 
+    function it_checks_against_a_single_integer_array()
+    {
+        $this->chop(1, [1])->shouldReturn(0);
+    }
+
     function it_finds_the_index_for_1_in_the_array()
     {
         $this->chop(1, $this->integers)->shouldReturn(0);
