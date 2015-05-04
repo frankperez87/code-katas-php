@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Kata\\": "src/Kata"
+        }
+    },
+    "require": {
+        "phpspec/phpspec": "~2.2"
+    }
+}

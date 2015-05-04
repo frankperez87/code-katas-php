@@ -1,0 +1,4 @@
+suites:
+  kata_suite:
+    namespace: Kata
+    src_path: src
