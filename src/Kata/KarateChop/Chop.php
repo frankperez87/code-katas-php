@@ -38,7 +38,7 @@ class Chop
     private function guardsAgainstEmptyArrayInput(array $integers)
     {
         if (empty($integers)) {
-            throw new InvalidArgumentException;
+            throw new InvalidArgumentException('Array provided cannot be empty.');
         }
     }
 

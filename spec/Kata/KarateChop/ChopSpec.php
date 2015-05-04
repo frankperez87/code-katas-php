@@ -18,7 +18,7 @@ class ChopSpec extends ObjectBehavior
 
     function it_checks_against_a_empty_array()
     {
-        $this->shouldThrow(new InvalidArgumentException)
+        $this->shouldThrow(new InvalidArgumentException('Array provided cannot be empty.'))
              ->during('chop', [-1, []]);
     }
 
